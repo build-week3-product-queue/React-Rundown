@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
+import React, { components } from 'react';
 
 import './App.css';
-import profileForm from './components/profileForm';
-import profiles from './components/profiles';
+import ProfileForm from './components/ProfileForm.';
+import Profiles from './components/Profiles.';
 import axios from 'axios';
 import { Route, NavLink } from 'react-router-dom';
 
-class App extends Component {
+class App extends components {
   constructor(props) {
     super(props);
     this.state = {
       profiles: [],
     };
   }
-  // add any needed code to ensure that the smurfs collection exists on state and it has data coming from the server
-  // Notice what your map function is looping over and returning inside of Smurfs.
-  // You'll need to make sure you have the right properties on state and pass them down to props.
 
   componentDidMount() {
-    const endpoint = 'http://localhost:3333/profiles';
+    const endpoint = 'http://localhost:3000/profiles';
 
     axios
       .get(endpoint)
@@ -32,7 +29,7 @@ class App extends Component {
 
   newProfile = (data) => {
     axios
-    .post('http://localhost:3333/profiles', data)
+    .post('http://localhost:3000/profiles', data)
     .then(response => {
       this.setState({
         profiles: response.data

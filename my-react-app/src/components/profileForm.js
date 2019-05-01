@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Components } from 'react';
 import './profile';
 
-class profileForm extends Component {
+class profileForm extends Components {
   constructor(props) {
     super(props);
     this.state = {
