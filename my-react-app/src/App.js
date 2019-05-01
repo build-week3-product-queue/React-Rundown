@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      smurfs: [],
+      profiles: [],
     };
   }
   // add any needed code to ensure that the smurfs collection exists on state and it has data coming from the server
@@ -18,21 +18,21 @@ class App extends Component {
   // You'll need to make sure you have the right properties on state and pass them down to props.
 
   componentDidMount() {
-    const endpoint = 'http://localhost:3333/smurfs';
+    const endpoint = 'http://localhost:3333/profiles';
 
     axios
       .get(endpoint)
       .then(response => {
-        this.setState({smurfs: response.data });
+        this.setState({profiles: response.data });
       })
       .catch(error => {
         console.log('Error: ', error);
       })
   }
 
-  newSmurf = (data) => {
+  newProfile = (data) => {
     axios
-    .post('http://localhost:3333/smurfs', data)
+    .post('http://localhost:3333/profiles', data)
     .then(response => {
       this.setState({
         profiles: response.data
