@@ -1,7 +1,7 @@
-import React, { Components } from 'react';
-import './profile';
+import React, { Component } from 'react';
+import './Profile';
 
-class profileForm extends Components {
+class ProfileForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,16 +52,16 @@ class profileForm extends Components {
             /> <br></br>
           </label>
           <label>
-            Height:
+            Idea:
             <input
               onChange={this.handleInputChange}
-              placeholder="height"
-              value={this.state.height}
-              name="height"
+              placeholder="idea"
+              value={this.state.idea}
+              name="idea"
             />
           </label>
           
-          <button className="submit" type="submit" /*onClick={this.addProfile}*/>Add to the database</button>
+          <button className="submit" type="submit" /*onClick={this.addProfile}*/>Add your idea</button>
         </form>
         </div>
         
@@ -70,4 +70,4 @@ class profileForm extends Components {
   }
 }
 
-export default profileForm;
+export default ProfileForm;

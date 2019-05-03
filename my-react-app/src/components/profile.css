@@ -19,9 +19,9 @@
   
   .profiles {
     
-    background-color: #63B2FE;
+    background-color: #2A2D33;
     color: rgba(0,0,0,0.7);
-    box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
+    box-shadow: 0 -1px 0 #2A2D33, 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
     height: 200px;
     width: 350px;
     margin: 20px 30px;
@@ -32,7 +32,7 @@
   
   .profileForm {
     margin: 20px auto;
-    border: 0.5px solid black;
+    border: 0.5px solid #92badd;;
     border-radius: 15px;
     height: 280px;
     width: 350px;
@@ -53,7 +53,7 @@
   
   .submit {
     margin-top: 30px;
-    background-color:  #63B2FE;
+    background-color:  #F1F4F3;
     color: white;
     font-weight: bold;
     height: 35px;

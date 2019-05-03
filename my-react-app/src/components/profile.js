@@ -1,23 +1,23 @@
 import React from 'react';
-import './profile.css';
+import './Profile.css';
 
-const profile = props => {
+const Profile = props => {
   return (
-    <div className="profile">
-      <div className="profiles">
+    <div className="Profile">
+      <div className="Profiles">
         <h3>{props.name}</h3>
-        <strong>{props.height} tall</strong>
-        <p>{props.age} profile years old</p>
+        <strong>{props.idea} good</strong>
+        <p>{props.age} user age</p>
       </div>
       
     </div>
   );
 };
 
-profile.defaultProps = {
+Profile.defaultProps = {
   name: '',
   height: '',
   age: ''
 };
 
-export default profile;
+export default Profile;

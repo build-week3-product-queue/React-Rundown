@@ -1,24 +1,23 @@
-import React, { Components } from 'react';
+import React, { Component } from 'react';
 
-import profile from './profile';
-import './profile.css';
-import profile from './profile';
+import Profile from './Profile';
+import './Profile.css';
 
-class profiles extends Components {
+class Profiles extends Component {
   render() {
     return (
-      <div className="profiles">
-        <h1>Data Base</h1>
+      <div className="Profiles">
+        <h1>Idea Group</h1>
         <div className="container">
           <ul>
-          {this.props.profiles.map(profile => {
+          {this.props.Profiles.map(Profile => {
             return (
               <Profile 
-                name={profile.name}
-                id={profile.id}
-                age={profile.age}
-                height={profile.height}
-                key={profile.id}
+                name={Profile.name}
+                id={Profile.id}
+                age={Profile.age}
+                idea={Profile.idea}
+                key={Profile.id}
               />
               );
             })}
@@ -29,8 +28,8 @@ class profiles extends Components {
   }
 }
 
-profile.defaultProps = {
- profiles: [],
+Profile.defaultProps = {
+ Profiles: [],
 };
 
-export default profiles;
+export default Profiles;
